@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cinzel&family=Cormorant+Garamond:wght@300&family=Forum&family=Oswald&family=Rethink+Sans&family=Righteous&family=Sen&family=Sevillana&family=Whisper&display=swap');
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+	*{
+		font-family: "Sen";
+	}
+	body{
+		width: 46rem;
+		margin: auto;
+		position: relative;
+	}
+	@media only screen and (max-width: 768px) {
+		body{
+			width: 100%;
+		}
+	}
+}
+
+.slick-slider{
+	display: grid;
+	grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+	height: 8rem;
+}
+.slick-slide{
+	width: 50% !important;
+
+}
